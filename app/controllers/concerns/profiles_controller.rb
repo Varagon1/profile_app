@@ -11,6 +11,7 @@ class ProfilesController < ApplicationController
     @profiles.name = params['name']
     @profiles.caption = params['caption']
     @profiles.url = params['url']
+    @profiles.user = params['user']
     if @profiles.save
     redirect_to "/profiles/#{ g.id }"
       else render 'new'
@@ -25,6 +26,7 @@ class ProfilesController < ApplicationController
     @profiles.name = params ['name']
     @profiles.caption = params['caption']
     @profiles.url = params['url']
+    @profiles.user = params['user']
    if @profiles.save
     redirect_to "/profiles/#{ g.id }"
      else

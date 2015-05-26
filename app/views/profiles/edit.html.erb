@@ -2,6 +2,7 @@
 <form action="/update_profile/<%= @profiles.id %>">
   <input type="text" name="name" placeholder="name" value="<%= @profiles.name %>">
   <input type="text" name="caption" placeholder="caption"value="<%= @profiles.caption %>">>
-  <input type="text" name="url" placeholder="url"value="<%= @profiles.url %>">>
+  <input type="text" name="url" placeholder="url"value="<%= @profiles.url %>">
+  <input type="text" name="user" placeholder="enter a user name" value="<%= @profiles.user %>">
   <input type="submit">
 </form>
